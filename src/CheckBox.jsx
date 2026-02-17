@@ -10,7 +10,12 @@ const CheckBox = ({ title }) => {
 
   return (
     <div style={styles}>
-      <input type="checkbox" name="enableItalic" value={enableItalic} onClick={({ target }) => setEnableItalic(target.checked)}/>
+      <input 
+        type="checkbox" 
+        name="enableItalic" 
+        checked={enableItalic} // Use 'checked' for boolean state
+        onChange={(e) => setEnableItalic(e.target.checked)} // Use 'onChange'
+      />
       <p style={{ fontStyle: enableItalic ? 'italic' : 'normal' }}>{title}</p>
     </div>
   );

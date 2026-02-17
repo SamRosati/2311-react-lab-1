@@ -30,7 +30,6 @@ const FontChooser = ({ title, text }) => {
         <li> <button onClick={() => setFont('verdana')}>Verdana</button></li>
         <li> <button onClick={() => setFont('Montserrat')}>Montserrat</button></li>
         <li> <button onClick={() => setFont('Garamond')}>Garamond</button></li>
-        <li> <button onClick={() => setFont('garamond')}>Garamond</button></li>
         <li> <button onClick={() => setFont('cursive')}>Cursive</button></li>
       </ul>
     </div>
